@@ -36,7 +36,7 @@ export const delimiterPatterns: Pattern[] = [
   // Colon-style: SYSTEM:, USER:, ASSISTANT:, Query:, godmode:, UserQuery:
   {
     regex:
-      /\b(?:system|user|assistant|human|ai|context|instruction|prompt|query|godmode|userquery)\s*:/gi,
+      /\b(?:system|user|assistant|human|ai|context|instruction|prompt|UserQuery)\s*:/gi,
     severity: 0.7,
     type: "delimiterInjection",
   },
